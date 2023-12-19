@@ -1,0 +1,41 @@
+:root {
+  --color-bg: #dc143c;
+  --color-white: #fff;
+  --color-black: #000;
+  --gradint1: #00dbde;
+  --gradien2: #b721ff;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--color-bg);
+}
+
+.card {
+  max-width: 500px;
+  background: var(--color-white);
+  padding: 1rem;
+  margin: 1.5rem;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  background: transparent;
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--gradint1), var(--gradien2));
+  border-radius: 100px;
+}
